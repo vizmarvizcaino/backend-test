@@ -5,7 +5,6 @@ import { User } from '../models/User.js';
 
 const { expect } = chai;
 
-
 describe('Test the auth endpoints', () => {
 
   it('should allow to create users', async () => {
@@ -103,5 +102,8 @@ describe('Test the auth endpoints', () => {
     expect(status).to.equal(401);
     expect(body.message).contains('Invalid Password');
   });
+  
+
+
   
 });

@@ -10,9 +10,9 @@ jobs:
       postgres:
         image: postgres
         env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: 69720700
-          POSTGRES_DB: proyectdb
+          POSTGRES_USER: ${{ secrets.USER_NAME_POSTGRES }}
+          POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
+          POSTGRES_DB: ${{ secrets.USER_NAMEDB_POSTGRES }}
         options: >-
           --health-cmd pg_isready
           --health-interval 10s

@@ -6,6 +6,7 @@ import _config from "../config/config.js";
 const env = process.env.ENV;
 const config = _config[env];
 
+
 // create connection
 const secuelize = new Sequelize(
   config.database,
